@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Chaya Punnam | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="profile.jpg" alt="Chaya Punnam" class="profile-pic" />
+    <h1>Chaya Punnam</h1>
+    <p><span class="typing-text"></span></p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="Chaya_Resume.pdf" download class="resume-button">📄 Download Resume</a>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      Hello! I'm <strong>Chaya Punnam</strong>, an enthusiastic and self-motivated Computer Science Engineering student from the batch of <strong>2027</strong>. I am currently pursuing my B.Tech in CSE and have a strong passion for technology, problem-solving, and continuous learning.
+    </p>
+    <p>
+      My areas of interest include <strong>Python programming</strong>, <strong>Web Development</strong>, and <strong>Open Source Contribution</strong>. I enjoy building user-friendly applications and exploring new tools and frameworks that enhance my technical skills.
+    </p>
+    <p>
+      I have already worked on exciting projects like a <em>QR Code Generator</em> using Tkinter and a <em>Currency Converter</em> using real-time API integration. I love participating in online coding challenges and building things that can create real impact.
+    </p>
+    <p>
+      Apart from coding, I enjoy reading tech articles, collecting “Videsam Vishesham” from Eenadu 📰, and expressing my creativity through storytelling and writing.
+    </p>
+    <p>
+      I'm actively seeking opportunities to grow as a developer, work on meaningful projects, and contribute to the tech community. I strongly believe in hard work, consistency, and the power of self-belief.
+    </p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>💻 Python (Tkinter, API Integration)</li>
+      <li>🌐 HTML, CSS, JavaScript</li>
+      <li>🔧 Git & GitHub</li>
+      <li>🗄️ SQL</li>
+      <li>📱 Flutter (Learning Phase)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>QR Code Generator</strong> using Python & Tkinter</li>
+      <li><strong>Currency Converter</strong> using API Integration</li>
+      <li><strong>Portfolio Website</strong> using HTML & CSS</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <ul>
+      <li>NPTEL discrete mathematics(IIT ROPAR)</li>
+      <li>NPTEL IoT Certification (IIT Kharagpur)</li>
+      <li>privacy and security in online social media(IIIT HYDERABAD)</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: <a href="mailto:chayapunnam13@gmail.com">chayapunnam13@gmail.com</a></p>
+    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/chaya-punnam" target="_blank">chaya-punnam</a></p>
+    <p>🧑‍💻 GitHub: <a href="https://github.com/chaya-punnam" target="_blank">chaya-punnam</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Chaya Punnam. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const text = "👩‍💻 Passionate CSE Student | Aspiring Developer";
+    let index = 0;
+    function typeEffect() {
+      document.querySelector(".typing-text").textContent = text.slice(0, index++);
+      if (index <= text.length) {
+        setTimeout(typeEffect, 80);
+      }
+    }
+    typeEffect();
+  </script>
+</body>
+</html>
